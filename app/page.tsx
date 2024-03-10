@@ -1,4 +1,7 @@
-//import Image from 'next/image';
+/**
+ * @prettier
+ */
+
 import {
   Theme,
   Card,
@@ -11,12 +14,12 @@ import {
   Switch,
   Button,
   Heading,
-} from '@radix-ui/themes';
+} from "@radix-ui/themes";
 
 export default function Home() {
   return (
     <div>
-      <Heading as='h1'>Dashboard - Home</Heading>
+      <Heading as="h1">Dashboard - Home</Heading>
     </div>
   );
 }

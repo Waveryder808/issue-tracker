@@ -2,7 +2,7 @@
 
 import { TextField, Button } from '@radix-ui/themes';
 import React from 'react';
-import SimpleMDE from 'react-simplemde-editor';
+import { SimpleMdeReact } from "react-simplemde-editor";
 import 'easymde/dist/easymde.min.css';
 import { useForm, Controller } from 'react-hook-form';
 import axios from 'axios';
@@ -30,7 +30,7 @@ const NewIssuePage = () => {
         name='description'
         control={control}
         render={({ field }) => (
-          <SimpleMDE placeholder='Description' {...field} />
+          <SimpleMdeReact placeholder='Description' {...field} />
         )}
       />
       <Button>Submit New Issue</Button>
