@@ -20,6 +20,7 @@ index.html
 # misc
 .DS_Store
 *.pem
+npm.md
 
 # debug
 npm-debug.log*
