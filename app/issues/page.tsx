@@ -1,10 +1,8 @@
 import React from 'react';
 import { Button, Heading } from '@radix-ui/themes';
 import Image from 'next/image';
-import { ImageLoader } from 'next/image';
 import Link from 'next/link';
 
-const imageLoader = new ImageLoader()
 
 const IssuesPage = () => {
   return (
@@ -13,12 +11,12 @@ const IssuesPage = () => {
       <div className="wrapper">
         <div className="card">
           <div className="avatar">
-            <Image
+            {/* <Image
                width={64}
                height={64}
                src={"https://placehold.co/64x64"}
                alt={"avatar"} 
-              /> 
+              />  */}
           </div>
           <div className="cardTitle">
             John McClane
