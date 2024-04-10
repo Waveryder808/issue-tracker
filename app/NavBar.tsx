@@ -9,7 +9,12 @@ import { usePathname  } from 'next/navigation';
 import classnames from 'classnames';
 import { DiCodeigniter } from 'react-icons/di';
 import { HiRefresh } from 'react-icons/hi';
-
+import { DiMysql } from "react-icons/di";
+import { HiCode } from "react-icons/hi";
+import { HiPuzzle } from "react-icons/hi";
+import { HiStar } from "react-icons/hi";
+import { HiSearch } from "react-icons/hi";
+import { MdEditNote } from "react-icons/md";
 
 const NavBar = () => {
   const currentPath = usePathname();
@@ -37,8 +42,27 @@ const NavBar = () => {
             {link.label}
           </Link>
         ))}
-        <HiRefresh />
+        
+        
       </ul>
+      <Link href='/'>
+        <HiSearch height={32}/>
+      </Link>
+      <Link href='/'>
+        <HiStar />
+      </Link>
+      <Link href='/'>
+        <HiCode />
+      </Link>
+      <Link href='/'>
+        <HiPuzzle />
+      </Link>
+      <Link href='/'>
+        <MdEditNote />
+      </Link>
+      <Link href='/'>
+        <DiMysql />
+      </Link>
     </nav>
   );
 };
